@@ -1,0 +1,2140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>
+      Proteus | Project Gutenberg
+    </title>
+
+    <link rel="icon" href="images/cover.jpg" type="image/x-cover">
+
+    <style>
+
+/* DACSoft styles */
+
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* General headers */
+h1 {
+    text-align: center; /* all headings centered */
+    clear: both;
+}
+
+/* Chapter headers */
+h2 {
+    text-align: center;
+    font-weight: bold;
+    margin: .75em 0;
+}
+
+div.chapter {
+    page-break-before: always;
+}
+
+.nobreak {
+    page-break-before: avoid;
+}
+
+/* Indented paragraph */
+p {
+    margin-top: .51em;
+    margin-bottom: .49em;
+    text-align: justify;
+    text-indent: 1em;
+}
+
+/* Unindented paragraph */
+.noi {text-indent: 0em;}
+
+/* Centered unindented paragraph */
+.noic {
+    text-indent: 0em;
+    text-align: center;
+}
+
+/* Non-standard paragraph margins */
+.p2 {margin-top: 2em;}
+
+.p6 {margin-top: 6em;}
+
+.pad2 {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/* Horizontal rules */
+hr {
+    width: 33%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 33.5%;
+    margin-right: 33.5%;
+    clear: both;
+}
+
+hr.chap {
+    width: 65%;
+    margin-left: 17.5%;
+    margin-right: 17.5%;
+}
+
+@media print {
+    hr.chap {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+hr.r30 {
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/* Lists */
+ul {list-style-type: none;}
+
+li {
+    margin-top: 1em;
+    text-indent: 0em;
+    padding-left: 0em;
+}
+
+
+/* Tables */
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    padding: .25em;
+}
+
+th {
+    padding: .25em;
+    font-weight: normal;
+}
+
+/* Table cell alignments */
+.tdl {
+    text-align: left;
+}
+
+.tdrb {
+    text-align: right;
+    vertical-align: bottom;
+}
+
+.tdrt {
+    text-align: right;
+    padding-right: 0.75em;
+    vertical-align: top;
+}
+
+.pr {
+    padding-right: .5em;
+}
+
+/* Physical book page and line numbers */
+.pagenum { /* uncomment the next line for invisible page numbers */
+    /*  visibility: hidden;  */
+    position: absolute;
+    right: 3%;
+/*    left: 92%;  */
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-align: right;
+    color: gray;
+} /* page numbers */
+
+/* Text appearance */
+.smcap    {font-variant: small-caps;}
+
+.allsmcap {
+        text-transform: lowercase;
+        font-variant: small-caps;
+}
+
+/* Small fonts and lowercase small-caps */
+.smfont {
+    font-size: .8em;
+}
+
+.smfontr {
+    font-size: .75em;
+    text-align: right;
+}
+
+/* Images */
+img {
+    max-width: 100%; /* no image to be wider than screen or containing div */
+    height:auto;     /* keep height in proportion to width */
+}
+
+.illowe6 {width: 6em;}
+
+.figcenter   {
+    margin: auto;
+    text-align: center;
+    page-break-inside: avoid;
+    max-width: 90%; /* div no wider than screen, even when screen is narrow */
+}
+
+/* Footnotes and sidenotes */
+.footnote         {margin-left: 10%; margin-right: 10%; font-size: 0.9em;}
+
+.footnote .label  {position: absolute; right: 84%; text-align: right;}
+
+.fnanchor {
+    vertical-align: super;
+    font-size: .65em;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* Transcriber's notes */
+.tnote {
+    background-color: #E6E6FA;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0.5em;
+}
+
+.tntitle {
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+    clear: both;
+}
+
+/* Title page borders and content. */
+.subtitle {
+    font-size: 1.5em;
+    text-align: center;
+    clear: both;
+}
+
+.halftitle {
+    font-size: 1.5em;
+    text-align: center;
+    clear: both;
+}
+
+.author {
+    font-size: 1.25em;
+    text-align: center;
+    clear: both;
+}
+
+.works {
+    font-size: .75em;
+    text-align: center;
+    clear: both;
+}
+
+/* Advertisement formatting. */
+
+.adauthor {
+    font-size: 1.25em;
+    text-align: center;
+    clear: both;
+}
+
+/* Hanging indent. */
+.hang {
+    text-indent: -2em;
+    padding-left: 3em;
+}
+
+.illowe6 {width: 6em;}
+
+    </style>
+</head>
+
+<body>
+
+
+<figure class="figcenter x-ebookmaker-drop" id="cover_sm">
+  <img src="images/cover_sm.jpg" alt="cover" title="cover">
+</figure>
+
+
+
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p class="noi halftitle">PROTEUS</p>
+</div>
+
+
+
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p class="noi adauthor" id="SERIES">TO-DAY AND TO-MORROW SERIES</p>
+</div>
+
+
+<hr class="r30">
+
+<ul>
+<li class="noi hang"><i>DÆDALUS, or Science and the Future</i><br>
+By J. B. S. Haldane</li>
+
+<li class="noi hang"><i>ICARUS, or The Future of Science</i><br>
+By the Hon. Bertrand Russell, F.R.S.</li>
+
+<li class="noi hang"><i>THE MONGOL IN OUR MIDST</i><br>
+By F. G. Crookshank, M.D. <i>Fully Illustrated</i></li>
+
+<li class="noi hang"><i>WIRELESS POSSIBILITIES</i><br>
+By Prof. A. M. Low. <i>With four Diagrams</i></li>
+
+<li class="noi hang"><i>NARCISSUS, or An Anatomy of Clothes</i><br>
+By Gerald Heard. <i>Illustrated</i></li>
+
+<li class="noi hang"><i>TANTALUS, or The Future of Man</i><br>
+By F. C. S. Schiller</li>
+
+<li class="noi hang"><i>THE PASSING OF THE PHANTOMS</i><br>
+By Prof. C. J. Patten, M.A., M.D., Sc.D., F.R.A.I.</li>
+
+<li class="noi hang"><i>CALLINICUS, A Defense of Chemical Warfare</i><br>
+By J. B. S. Haldane</li>
+
+<li class="noi hang"><i>QUO VADIMUS? Some Glimpses of the Future</i><br>
+By E. E. Fournier d’Albe, D.Sc., F.Inst.P.</li>
+
+<li class="noi hang"><i>THE CONQUEST OF CANCER</i><br>
+By H. W. S. Wright, M.S., F.R.C.S.</li>
+
+<li class="noi hang"><i>HYPATIA, or Woman and Knowledge</i><br>
+By Dora Russell (The Hon. Mrs. Bertrand Russell)</li>
+
+<li class="noi hang"><i>LYSISTRATA, or Woman’s Future and Future Woman</i><br>
+By A. M. Ludovici</li>
+
+<li class="noi hang"><i>WHAT I BELIEVE</i><br>
+By the Hon. Bertrand Russell, F.R.S.</li>
+
+<li class="noi hang"><i>PERSEUS, or Of Dragons</i><br>
+By H. F. Scott Stokes, M.A.</li>
+
+<li class="noi hang"><i>THE FUTURE OF SEX</i><br>
+By Rebecca West</li>
+
+<li class="noi hang"><i>THE EVOCATION OF GENIUS</i><br>
+By Alan Porter</li>
+
+<li class="noi hang"><i>AESCULAPIUS, or Disease and The Man</i><br>
+By F. G. Crookshank, M.D.</li>
+
+<li class="noi hang"><i>PROTEUS, or The Future of Intelligence</i><br>
+By Vernon Lee</li>
+</ul>
+
+<p class="noic"><i>Other Volumes in Preparation</i></p>
+
+<hr class="r30">
+
+<p class="noi adauthor">E. P. DUTTON &amp; COMPANY</p>
+
+
+
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<h1 class="nobreak">PROTEUS</h1>
+
+<p class="noic">OR</p>
+
+<p class="noi subtitle">THE FUTURE OF INTELLIGENCE</p>
+
+<p class="p2 noic">BY</p>
+
+<p class="noi author">VERNON LEE, <span class="allsmcap">LITT.D.</span></p>
+
+<p class="noi works">Author of <i>Vital Lies, Satan the Waster,<br>
+The Handling of Words, etc.</i></p>
+
+<div class="pad2">
+<figure class="figcenter" id="logo">
+  <img class="illowe6" src="images/logo.jpg" alt="logo" title="logo">
+</figure>
+</div>
+
+<p class="noi adauthor"><span class="smcap">New York</span><br>
+E. P. DUTTON &amp; COMPANY<br>
+<span class="smcap">681 Fifth Avenue</span></p>
+</div>
+
+
+
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p class="noic">Copyright 1925<br>
+By E. P. Dutton &amp; Company</p>
+
+<p class="p2 noic"><i>All Rights Reserved</i></p>
+
+<p class="p6 noic"><i>Printed in the United States of America</i></p>
+</div>
+
+
+
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p class="noic"><i>To my dear friend<br>
+BELLA DUFFY<br>
+with thanks for a lifetime<br>
+of intelligent talk.</i><br>
+1880–1925</p>
+</div>
+
+
+
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<h2 class="nobreak" id="CONTENTS">TABLE OF CONTENTS</h2>
+</div>
+
+
+<table>
+<col style="width: 20%;">
+<col style="width: 70%;">
+<col style="width: 10%;">
+<tr>
+  <th class="pr smfontr">CHAPTER</th>
+  <th class="tdl"></th>
+  <th class="smfontr">PAGE</th>
+</tr>
+<tr>
+  <td class="tdrt">I</td>
+  <td class="tdl"><a href="#I">INTELLIGENCE AND PROTEUS</a></td>
+  <td class="tdrb">1</td>
+</tr>
+<tr>
+  <td class="tdrt">II</td>
+  <td class="tdl"><a href="#II">PROTEUS AND ETHICS</a></td>
+  <td class="tdrb">25</td>
+</tr>
+<tr>
+  <td class="tdrt">III</td>
+  <td class="tdl"><a href="#III">PROTEUS AND ÆSTHETICS</a></td>
+  <td class="tdrb">38</td>
+</tr>
+<tr>
+  <td class="tdrt">IV</td>
+  <td class="tdl"><a href="#IV">PROTEUS AND INTELLECTUAL MANNERS</a></td>
+  <td class="tdrb">42</td>
+</tr>
+<tr>
+  <td class="tdrt">V</td>
+  <td class="tdl"><a href="#V">USES AND ABUSES</a></td>
+  <td class="tdrb">50</td>
+</tr>
+</table>
+
+
+
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p class="noi subtitle">PROTEUS</p>
+
+<p class="noic">OR</p>
+
+<p class="noi author"><span class="smcap">The Future of Intelligence</span></p>
+</div>
+
+
+
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum"><a id="Page_1"></a>[1]</span></p>
+
+<h2 class="nobreak" id="I">I<br>
+<small>INTELLIGENCE AND PROTEUS</small></h2>
+</div>
+
+
+<p>There seems not to exist a word—for
+words are old while meanings may be
+new—which answers exactly to what
+I shall speak of as <em>Intelligence</em>. But
+space being short for what has to be
+said, I will not waste any in preliminary
+definitions. That which I mean by
+Intelligence will become evident by
+what I expect from its presence and
+attribute to its absence. I start from
+the assumption that it already exists,
+however insufficiently; and I deduce
+from what it has done that its nature
+is to intensify and extend. Whether
+this will be witnessed in the near
+future, or whether it may be checked
+by adverse circumstances, is no concern
+of mine. Writers of this series, and<span class="pagenum"><a id="Page_2"></a>[2]</span>
+several others besides, have enlarged
+on the political and economic contingencies
+to which Intelligence, or
+persons presumed to have it, seem
+likely to be exposed. Whether Intelligence
+may become the weapon of a
+dominant caste, as was the hope of
+Comte, of Renan, and, at one moment,
+of Mr. H. G. Wells; or whether, as
+proposed by M. Charles Maurras, Intelligence
+shall be honoured with a
+subordinate function in some sort of
+Fascist State, I am inadequate to
+judge. Nor do I even feel certain that
+history has shown, or economic theory
+demonstrated, that Intelligence can be
+bullied or starved out of existence.
+Meanwhile let me confess that what
+I have to say about the Future of Intelligence
+is the expression as much of
+my hopes as of my convictions, both,
+however, arising from a longish experience
+of changes already brought about,
+and changes beginning to be brought
+about, by the particular, and perhaps
+rather modern, something I mean by<span class="pagenum"><a id="Page_3"></a>[3]</span>
+<em>Intelligence</em>. What <em>I</em> mean, and what,
+under restriction to that meaning, appears
+<em>to me</em> likely or desirable. By
+underlining these personal pronouns, I
+am able to forestall the mention of
+one great change which Intelligence is
+already initiating, namely, the recognition
+and avowal that what one thinks
+(as distinguished from what primers,
+manuals and other authorities have
+taught one to believe) is—well, <em>just
+what one does think</em>, and neither the
+consensus of human opinion nor the
+revelation of the Deity’s irrefragable
+truth.</p>
+
+<p>Returning to the word <em>Intelligence</em>,
+the meaning I attach to it will become
+sooner obvious by clearing away some
+misconceptions thereof which may occur
+to my reader. And first: The Intelligence
+whose future interests me is
+not the same thing as the <em>Intelligentsia</em>.
+Those of us who belong to that class
+presumably possess <em>Intelligence</em>, since
+we live, or try to live, by its exercise.
+But it is no monopoly of ours, nor do<span class="pagenum"><a id="Page_4"></a>[4]</span>
+we always employ it in the manner
+which answers to my meaning. For
+living on or by its employment may, as
+is often seen among men of science and
+philosophers, result in their capital of
+natural Intelligence being sunk in a
+few enterprises of especial value, leaving
+them, as in the notorious case of
+Dr. Faust, but a scanty balance for
+current use and pleasure. I have
+brought in the word <em>pleasure</em> because
+the pleasantness of its varied exercise
+is one of the chief characteristics of
+what I mean by <em>Intelligence</em>, fostering
+that nimbleness, elasticity, hence also
+pervasiveness, which makes it a chief
+factor of human progress, as well as
+one of progressive mankind’s indisputable
+marks and unalienable rewards.
+Now these same pleasant properties, so
+often sacrificed by very studious persons,
+turn Intelligence into the stock-in-trade
+(eked out with plentiful surrogates)
+of that other branch of the
+<em>Intelligentsia</em>, those who make a livelihood
+by living down to their readers,<span class="pagenum"><a id="Page_5"></a>[5]</span>
+relieving their boredom, lapping their
+thick skins in sentimentality, and keeping
+up the sooty flame of their collective
+passions; for alas, the Man of Letters
+is tempted to serve his public not
+merely as an unconsidered jester but
+as a respected moral guide.</p>
+
+<p>Thus it comes about that we of the
+<em>Intelligentsia</em> cannot stand as faultless
+specimens of Intelligence. Besides, our
+facility for self-expression and our
+habit of holding forth unchecked combine
+to exaggerate, stereotype and warp
+our best ideas: only think of Carlyle
+and Ruskin, let alone Tolstoy and
+Nietzsche!</p>
+
+<p>Having so far established what I do
+<em>not</em> mean by Intelligence, and before
+entering on discussion of Intelligence’s
+future achievements, it seems fitting
+to say a word or two about Proteus,
+to whom this little treatise is consecrated.
+It is so, I confess, partly because
+I am attracted by the classical
+titles, <cite>Dædalus</cite>, <cite>Icarus</cite>, <cite>Tantalus</cite>, of
+my predecessors, and then because, as<span class="pagenum"><a id="Page_6"></a>[6]</span>
+described by Virgil, Proteus is to me
+one of the most engaging figures of
+mythology: ... “<span lang="la">Ille, suae contra
+non immemor artis, omnia transformat
+sese in miracula rerum, ignemque,
+horribilem feram, fluviumque liquentem</span>....”</p>
+
+<p>But here again I must forestall
+another wrong identification likely to
+jump into the reader’s mind: to wit,
+of Proteus with Intelligence. On the
+contrary: Proteus, multiform and ever-elusive,
+represents that which Intelligence
+(lighter equipped than specialized
+Intellect for such rapid hunts) can
+sometimes catch sight of and, for however
+brief a contact, sometimes even
+clutch. Proteus, in my mythology, is
+the mysterious whole which we know
+must exist, but know not how to
+descry: Reality. For, whatever else
+we may believe it to be, Reality when
+thus partially revealed, is never twice
+the same. Nor merely because of
+what we call waxing and waning,
+growth and decay, and whatever other<span class="pagenum"><a id="Page_7"></a>[7]</span>
+phases of individual and racial transformation
+biology has made us superficially
+familiar with. There may
+well be some πάντα ῤεῖ outside and
+irrespective of our thoughts; indeed,
+it may have been in miming the universal
+flux that our thoughts themselves
+have grown <em>protean</em>. Look, for
+instance, at that strange (well named
+<em>auxiliary</em>) verb whereby we testify belief
+in reality, <i lang="la">esse</i>, <em>to be</em>; which holds
+in its emptiness the possibility of all
+qualities and happenings and implies
+in its assertion of mere blank existence
+the assurance of continual change: a
+future and past. For, whenever we
+speak of what we call a <em>thing</em>, its mere
+name, like the name of Virgil’s Proteus,
+is a spell making us witness aspect
+after aspect, take stock of relation
+after relation, admit likelihood after
+likelihood. And our belief in that
+thing’s reality, in its being <em>that thing</em>
+and no other, means that it has had
+a certain, however unknown; past, and
+will have a more or less certain future.<span class="pagenum"><a id="Page_8"></a>[8]</span>
+In this sense <em>Reality</em>, the fact of aspects
+perceived, remembered and expected
+in regularly connected sequences and
+combinations, <em>that</em> is what I mean by
+Proteus. Maybe that Proteus does not
+change at all except in our narrow, and
+shifting, field of vision. Maybe that
+the multiform Virgilian Proteus might
+turn out to undergo but one first and
+last transformation, into that great
+auxiliary <i lang="la">esse</i>, <em>to be</em>, holding in its stark
+emptiness all that, for us, is things and
+happenings.... Such a transcendent
+and sole real Reality I leave to metaphysicians,
+not without wondering
+secretly whence, save from occasional
+experience of this (to them) unreal
+Proteus, they ever got to think about
+Reality at all.</p>
+
+<p>So, dealing in this shallow treatise
+solely with such (even if spurious)
+Reality as Proteus represents, I need
+now only justify my outrageous claim
+that mere Intelligence can have any
+privileged intercourse therewith. My
+ground for saying so is that specialized<span class="pagenum"><a id="Page_9"></a>[9]</span>
+intellect screws its marvellous lenses
+down on only a single, and <em>singled out</em>,
+aspect of Reality; employs subtle
+reagents revealing only the properties
+for which they have been devised.
+Moreover, that the world of regular,
+foretellable sequences which science
+constructs is a map teaching us why
+to turn to the right or the left, but not
+a moving slice of the landscape we are
+moving in. Instead of which mere
+Intelligence, with its rule-of-thumb
+logic and well-nigh automatic movements,
+may be fairly fitted, not indeed
+to inventory and schedule separate
+items of Proteus’ multifold embodiments,
+but to keep us aware that
+Proteus is there at that eternal game of
+his: changing his aspects perpetually,
+whether you watch him or not, nay,
+changing aspect by the very fact of
+your watching him.</p>
+
+<p>This may suggest that Intelligence is
+never at rest; and no more it is. But
+its movements being responsive to what
+strikes it from outside, are, just as the<span class="pagenum"><a id="Page_10"></a>[10]</span>
+outside’s own ways, orderly, and such
+as organize themselves into regular
+rhythms of sameness and diversity.
+For Proteus is absolutely unexpected
+only to persons like Virgil’s Aristæus
+who, you must remember, was so hide-bound
+in his business of <em>h</em>oney-making
+(alter one letter, you won’t alter my
+meaning!) as to be wholly unaware
+that his own caddish behaviour had
+occasioned the death of Eurydice and
+so remarkable an event as the Descent
+of Orpheus into Hell. Practical people
+like that are nearly always astonished
+and dismayed when confronted with
+Proteus; “they had forgotten....”
+Now Intelligence is as much memory as
+perception; and for it there is always
+in the transformations it is watching
+something familiar which carries it
+back to what it has already witnessed,
+and forwards, expectantly, to something
+it may be going to witness. Hence
+to Intelligence there is never mere
+repetition, just as there is never utter
+novelty. And its frequent doubts are<span class="pagenum"><a id="Page_11"></a>[11]</span>
+always conditioned by its habitual beliefs.
+That explains why Intelligence
+is so chock-full of prejudices, as all
+those are aware who have ever asked it
+to accept miracles and ghosts on their
+testimony or on someone else’s authority.
+Such people exclaim at the sceptic’s
+blindness to evidence, because they
+do not know that doubting and even
+denying are part of Intelligence’s active
+rhythm of grasping and acquiescing; a
+process of assimilation and elimination
+in which the already experienced and
+accepted selects that which shall be
+accepted or rejected. Moreover, such
+selective action often expresses itself
+in the most impertinent (because most
+pertinent) queries, as: “Now how
+would you explain that?” “In what
+sense are you using that word?” etc.,
+etc., etc. Queries, all of them, which
+in their exasperating amateurishness
+have probably done more than the
+elaborate arguments of specialized Intellect
+to shoo away some of the many
+Chimæras, Entities, and Essences,<span class="pagenum"><a id="Page_12"></a>[12]</span>
+which, as Rabelais already remarked,
+had gone on <i lang="la">bombinating in vacuo</i>
+through the resounding spaciousness of
+philosophy and science, leaving behind
+only the fainter buzz of <em>Historical and
+Economic Laws</em>, <em>Entelechies</em>, <em>Teleologies</em>
+and <em>Vital Elans</em>. It was, I take
+it, Intelligence which first scoffed in
+Molière’s play at opium’s <cite lang="la">Virtus
+Dormitiva</cite>....</p>
+
+<p>At this point a parenthesis must be
+opened on account of a reader asking,
+not impertinently, whether what I have
+been talking of under the name of
+Intelligence is not plain <em>Common Sense</em>.
+Yes; but also <em>No</em>. Since, on behalf of
+practicality, Common Sense usually
+warns us off from just such questions
+as Intelligence should deal with. So
+one might say that Intelligence is a
+kind of Common Sense, but applied to
+uncommon (not common or garden!)
+subjects, and as yet, alas, only by
+rather uncommon people.</p>
+
+<p>If Proteus be taken to represent that
+Reality which all save metaphysicians<span class="pagenum"><a id="Page_13"></a>[13]</span>
+believe to be real, he represents especially
+that half of it which I have (elsewhere)
+called <em>Otherness</em>, that is to say,
+whatever is not <em>ourself</em>. And just as
+the essential, unshareable <em>ourself</em> is
+what we feel, to wit: moods, passions,
+efforts, hope and fear, liking and disliking;
+so the <em>not-ourself</em> (other persons
+as well as other things, and even
+our own personalities when viewed as if
+they were not our own)—the <em>Otherness</em>
+in short, is, on the contrary, <em>seen</em>,
+because it is outside us. Seen by the
+mental eye of Intelligence, which, like
+the bodily one, moves in every direction
+and focuses to all distances, thereby
+informing us of the proportions and
+relations of whatever is not ourself, and
+following step by step the actions
+which are not our own. And though
+it must borrow the lenses of Science
+(which centuries of thinkers cut and
+polished) before it can know things in
+their microscopic detail or their astronomical
+remoteness, yet with no aid
+save everyday experience, Intelligence<span class="pagenum"><a id="Page_14"></a>[14]</span>
+suffices to teach us the most important
+and most overlooked fact concerning
+that Reality which is <em>Otherness</em>: namely,
+that it has ways of its own and does
+not exist merely to suit our likings.</p>
+
+<p>The habit of taking “otherness”
+into account, and a wider and wider
+circle thereof, might serve as a rough
+test of Intelligence and of its progress:
+young children, as is notorious, referring
+everything to themselves; and
+“uneducated” people, from the narrowness
+of their knowledge, rarely conceiving
+anything beyond their own
+personal experience. At the risk of
+incurring the same criticism, I hazard
+my own impression that the dominance
+of possessive pronouns, the restriction
+of interest to one’s own history and
+circle of acquaintances, has become less
+usual among “educated” persons.</p>
+
+<p>Similarly, that there is getting to be
+something rather old-fashioned about
+settling general questions on the strength
+of single personal experiences. Except
+where strong likes and dislikes come<span class="pagenum"><a id="Page_15"></a>[15]</span>
+into play, it is rarer than formerly
+to hear (shall we say?) divorce condemned
+because of the sad case of
+Mrs. Blank; or the eight-hours day
+rejected on account of last harvest having
+been soaked; or the practical utility
+of a classical education justified by
+the career of Mr. Gladstone. Modes of
+thought like this seem to be (slowly!)
+disappearing in the wake of the anecdote-mongering
+and epigram-and-joke
+button-holing of ancient bores who
+may have been brilliant conversationalists
+at Meredithian dinner-tables. And
+when one thinks of it: was not such
+the substance of much of our grandparents’
+wit and wisdom? Nay, a
+little further back did not “gentlemen”
+ask the ladies riddles after themselves
+exchanging smutty <i>Joe Millers</i> over
+their wine? And behold! there opens
+up a vista of euphuism, of pedantic
+discussions, of “<span lang="fr">sonnet, c’est un sonnet</span>,”
+of “<span lang="la">deliciæ eruditorum</span>,” and
+“<span lang="la">facetiæ”</span>; boredom incalculable back
+through Hôtels de Rambouillets and<span class="pagenum"><a id="Page_16"></a>[16]</span>
+Medicean academies to Courts of Love
+and the stale scurrilities of Shakespearian
+clowns.... Nay, was not
+Shakespeare himself ready to adorn
+with supremest poetry and philosophy
+stories often preposterously cock-and-bull?
+Which makes one suspect that
+Intelligence, in the sense in which I
+have been using the word, is of amazingly
+recent growth; and that the
+people of the past, superior though
+they may have been in genius, wit,
+humour, and even wisdom, would have
+struck us (and we shall doubtless
+strike future generations) as decidedly
+stupid.</p>
+
+<p>For instance (returning to Proteus!),
+in their capacity of <em>thinking in terms
+of change</em>. This seems an <em>intrinsic part
+of thinking in terms of otherness</em>; yet,
+as, a fact, it dates only from the days
+of Montesquieu, Voltaire, Gibbon and
+Condorcet. This last name brings
+home that until the eighteenth century
+the only Future which people thought
+about was the Future in Heaven or<span class="pagenum"><a id="Page_17"></a>[17]</span>
+Hell. The importance of the latter
+alternative explains quite sufficiently
+why no interest was left over for any
+other after-life, to wit, that of unborn
+generations. Indeed, the sway of religious
+conceptions accounts also for
+our ancestors having been no less cut
+off from the Past and replacing it
+(as their painters dressed Abraham or
+Cæsar in Renaissance costume) by the
+Present. For all religion tends to
+think <i lang="la">sub specie æternitatis</i>, as of the
+god who is sacrificed afresh at every
+celebration, and who consecrates the
+routine of the seasons and the seasonal
+monotony of agriculture and pastoral
+life; whence, no doubt, the persistence
+of the amazing fallacy <em>that there is
+nothing new under the sun</em>, with its
+corollary that there ought to be nothing
+not <em>old</em>. Whence also the double
+superstition (till Science broke in with
+something different!) of chewing and
+rechewing the cud of Scripture and the
+Classics. With, in turn, the practical
+results that Milton’s Puritans modelled<span class="pagenum"><a id="Page_18"></a>[18]</span>
+themselves on Joshua and Gideon; and
+frilled and waistcoated French Revolutionaries
+postured as heroes of Plutarch.
+Why, at this very moment do we not
+see the rods and axes of antique hangmen
+figuring (not merely in figurative
+manner!) as emblems of post-war Italy,
+itself identified (to the neglect of
+schools and irrigation works) with a
+particularly high and palmy Rome?
+Rome! to rule which squalid mediæval
+village Dante called on a <em>Cæsar</em> who was
+a <em>Kaiser</em> elected by German feudatories;
+Rome, which we may take as a <i lang="la">reductio
+ad absurdum</i> of the refusal to realize
+that Past is Past and Present is Present.
+Which is perhaps the only “Lesson of
+History”; and whose application would
+dissolve many mythical alloys of conflicting
+nations welded together by the
+passionate white-heat of a name: England,
+France, America, Christianity,
+and nowadays, I fear, also Socialism,
+nations, and creeds concerning which,
+when asked for our allegiance, we
+have need to inquire: In which of its<span class="pagenum"><a id="Page_19"></a>[19]</span>
+phases, which of its characteristics and
+embodiments?</p>
+
+<p>For Intelligence warns us that we
+are dealing with Proteus, with him
+of ceaseless change. Not with the
+eternal, immutable divinities to whom
+our forebears brought their sometimes
+quaint and lovely, but, quite
+as often, obscene and grisly oblations.</p>
+
+<p>But while ignoring distinctions
+between Past and Present, even our
+nearer ancestors conducted much of
+their thinking in elaborate water-tight
+compartments; for they conceived of
+“Truth” as a battleship, continually
+exposed to the murderous broadsides
+of “Error.” Of these hermetic
+partitions, say, between <em>Faith</em> and
+<em>Reason</em>, <em>Body</em> and <em>Soul</em>, or <em>Good</em> and
+<em>Evil</em>, Intelligence has already rammed
+in a number, without drowning us.
+<em>Error</em> itself has lost its capital E, being
+usually called <em>Mistake</em>. And, what
+is more important, we have begun to
+notice that it and <em>Truth</em> are not at all<span class="pagenum"><a id="Page_20"></a>[20]</span>
+irreconcilable, but cradled originally
+together, and sometimes intermarrying,
+with mixed or alternating generations,
+as by Mendelian rules; but very rarely,
+either Truth or Error, affording us a
+pure breed.</p>
+
+<p>These examples will have justified,
+I trust, my contention that Intelligence
+is specially fitted to deal with Change.
+Not to praise or blame it after mature
+deliberation, like solemn and sedentary
+Reason; still less to filter concrete
+realities into immutable, because purely
+abstract, entities, which is the business
+of scientific thought; but just to perceive
+change on its passage and in so
+far help us to make the best of its
+coming.</p>
+
+<p>Need one add that Intelligence is
+far more liable to mistakes than either
+“Reason” or “Logic”? But its mistakes,
+though so much more numerous,
+are, methinks, less massively enthroned
+and less likely to block the
+way than theirs, for there is something
+self-satisfied and without appeal about<span class="pagenum"><a id="Page_21"></a>[21]</span>
+“Reason” and “Logic”: does not
+the one issue “dictates” and the other
+enunciate “laws”? Whereas the mistakes
+which Intelligence commits to-day,
+it will, in its light-hearted way,
+correct to-morrow, being as little
+ashamed of revokes as its disconcerting
+friend Proteus is of transformations.
+Of course, Intelligence <em>is</em> rather irresponsible
+and, one might add, cannot
+help being so because it is essentially
+<em>responsive</em>. Like the human eye (to
+which I have compared it) Intelligence
+turns to whichever side the light comes
+from, adjusting itself, in discursive,
+often desultory fashion, to all manner
+of directions and distances, comparing
+and measuring with unabashed slovenliness,
+extracting the qualities which
+strike it and hastening on to connect
+them with something it was struck by
+before. Being thus rapidly responsive,
+Intelligence may often, I admit, seem
+<em>on the pounce</em>, and more so than politeness
+warrants. But it can also take its
+time, poise circling round and round,<span class="pagenum"><a id="Page_22"></a>[22]</span>
+and reverse its movement, because it is
+never motionless and always able to
+readjust its balance.</p>
+
+<p>Such do I see Intelligence in those
+who possess it; such do I feel it, on
+some delightful occasions, in myself.
+Such also I frequently notice it failing
+to make itself agreeable to some kinds
+of persons. Those who take a just
+pride in Reason or Logic are often a
+little ruffled; or else, as Wagner said
+of Mozart, they find Intelligence just
+a little <i lang="de">frivol</i>. But in the long run
+they recognize an ally; and their
+conscious superiority makes them
+indulgent. Not so with people—I
+might have said Peoples—who happen
+to be indulging in the glorious
+unimpeded violence of collective
+passions, specially those which are magnanimous
+and cruel, as, for instance,
+in war time, when a conscientious
+objector may come off better than an
+intelligent one.</p>
+
+<p>In like fashion Intelligence’s passionate
+pleasure in dealing with <em>Otherness</em><span class="pagenum"><a id="Page_23"></a>[23]</span>
+and in looking out for Proteus,
+Intelligence’s frequent indifference to
+<em>here</em> and <em>now</em>, disrespect to <em>self</em> and
+refusal to regard <em>means</em> as <em>ends</em>—all
+this renders it unpopular with those
+practical-minded men who are bent on
+personal advantage and on outstripping
+competitors in the great race to <em>Nowhere</em>.
+These acute persons are quite
+aware that Intelligence might make
+an invaluable slave, only you cannot
+keep its nose, with any regularity, to
+the grindstone. In default of such
+practical usefulness it may be worth
+hiring, as one buys a yacht or an old
+master, for a mark of wealth and being
+in the know. But let us have none of
+your <em>whys</em> and <em>wherefores</em>! Besides,
+the Rulers of Men have by this time
+mostly recognized that Intelligence is
+harder to deal with than any number
+of High Principles, for you cannot
+hope to bamboozle it into serving you
+unawares.</p>
+
+<p>But Intelligence, though thus in
+some quarters deservedly unpopular is<span class="pagenum"><a id="Page_24"></a>[24]</span>
+adored by all who have it; and that
+is the reason why, once it has got a
+footing in the world, it is bound to
+increase and multiply and eventually
+conquer its promised land.</p>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum"><a id="Page_25"></a>[25]</span></p>
+
+<h2 class="nobreak" id="II">II<br>
+<small>PROTEUS AND ETHICS</small></h2>
+</div>
+
+
+<p>I have just come across a passage from
+Huxley’s famous <cite lang="fr">Romanes Lecture</cite>,
+read thirty years ago and long since forgotten;
+and which has brought home
+to me all our elusive Proteus has been
+doing in the domain of ethics; moreover
+the share of Intelligence in confirming
+those changes. Huxley is pointing out
+a fact which he finds disconcerting,
+namely, “that ethical nature, while
+born of cosmic nature, is necessarily
+at enmity with its parent.” The
+allusion to the harmony reigning in
+Victorian families may make one
+smile, like some well-bred Du Maurier
+illustration. But how those words
+bring back what some of us are old
+enough to have suffered in days when<span class="pagenum"><a id="Page_26"></a>[26]</span>
+Free Thought drew a terrifying line
+between religious dogmas and moral
+ones, clinging to these to steady itself
+after jettisoning the others! One’s
+youthful deistic anguish (as cruel, perhaps,
+as any believer’s sense of God’s
+forsaking him) at discarding God for
+insufficient morality, was merely transferred
+to one’s terms with Huxley’s
+ogre Cosmos, devouring the moral instincts
+itself had begotten. Occupied as
+my studies then were with art-history,
+I can remember wrestling with the
+horrid inconsistency of the art of
+Michael Angelo and Rafael having
+arisen in a civilization described by
+Taine as partaking of the brothel and
+the cut-throat’s den. And I remember
+the heavenly relief of hitting on the
+notion that, since such art is not born
+in a day, it must have been begotten
+and incubated during the Franciscan
+Age, immune from all Borgian infections.
+Of course, the generation
+immediately younger than mine was
+taught by Nietzsche that Michael<span class="pagenum"><a id="Page_27"></a>[27]</span>
+Angelo’s greatness was, on the contrary,
+due to presiding Renaissance villainy;
+but that pseudo-Nietzschian generation
+is, in its turn, superannuated, and the
+cult of <em>immoralism</em> along with it. Not
+only because paradoxes do not bear
+repetition, but for another reason which
+that quotation from Huxley has made
+me realize. Namely, that we have left
+off thinking of art as either moral or
+immoral, simply because morality no
+longer holds the same place in our
+thoughts as, say, in those of Ruskin,
+George Eliot, or, as that quotation
+shows, even in those of Huxley. Not
+the same (if one may say so, <em>ubiquitous</em>)
+place; a place more clearly defined,
+but only the more important, ever since
+Intelligence, ferreting about among
+<cite>Golden Boughs</cite>, <cite>Religion of the Semites</cite>,
+and similar books, has quietly stripped
+from our moral valuations that half-supernatural,
+half-æsthetic halo which
+is but the shrunken religious involucrum
+wherein they came into the
+world. The “problem of evil” has<span class="pagenum"><a id="Page_28"></a>[28]</span>
+already become the problem not of its
+toleration by God, but of its diminution
+by Man. <em>That</em> is the great change we
+are still witnessing; a change, I cannot
+but think, greater than any brought
+about by the material applications of
+science, and implying a deliverance
+from individual suffering not less than
+that we owe to Pasteur and to Lister.</p>
+
+<p>Whether we notice it or not, Morality
+is already taking a new status, independent
+alike of an absentee (or absent)
+Deity, and of an indifferent Cosmos.
+But its new domain, narrow and self-governing,
+essentially <i lang="la">sui generis</i>, has
+sanctions and imperatives only the
+stronger for being man-made and man-regarding.
+And, one may add, only
+the more austerely binding on the
+present that we shall recognize them as
+different from those of the Past and
+different, no doubt, from those into
+which the Future will transform them.</p>
+
+<p>Thus we are already conceiving of
+punishment only as a mechanism,
+successful or not, for social defence.<span class="pagenum"><a id="Page_29"></a>[29]</span>
+And we scarcely ever hear more than
+the last echo of those incentives to
+virtue and deterrents from vice of the
+<i>Sandford and Merton</i> type of my own
+childhood’s copybooks. Still less of
+the Stoical, and (alas!) Platonic
+mendacities about remorse torturing
+evil-doers, and the unhappy life of
+Browning’s <cite lang="la">Instans Tyrannus</cite> with his
+“Then <em>I</em> was afraid.” Neither do we
+talk any longer of the virtuous glows
+which (failing the increase of flocks
+and herds!) used to reward the virtuous
+acts of the generation adorned by
+Butler’s Mr. Pontifex. We are getting
+to think of our own virtues, supposing
+we have any, as conducive not to our
+own advantage but to that of other
+folk.</p>
+
+<p>Consonantly with the psychologist’s
+recognition that, of the two polar
+feelings determining human action, the
+(positive) attraction of pleasure is far
+less potent than the (negative) repulsion
+of pain, it seems as if our future ethics
+would emphasize not good actions but<span class="pagenum"><a id="Page_30"></a>[30]</span>
+bad ones. That will be following up
+the rule-of-thumb wisdom of the Commandments,
+of which the surviving
+ones are all “thou <em>shalt not</em>”; the
+positive ones about loving God and
+honouring Father and Mother having
+become either difficult to enforce or
+optional. I am glad of that word
+<em>optional</em>, because it leads to the remark
+that Intelligence is surely abolishing
+that neutral territory whence “good
+actions” can issue at “good” people’s
+good pleasure and as an expression of
+their goodness, but which no one has
+a right to insist upon; indeed, which
+they have a perfect right to withhold,
+since they are patted on the back for
+doing them, or have their hands kissed,
+as children were taught to kiss those of
+the “revered author of their being.”
+I expect that before so very long
+Intelligence may bluntly suggest that
+if the action, whatever it happen to be,
+is <em>really good</em>, that must mean that it is
+<em>really needed</em>; and if it is really needed,
+your fellow men can claim it and oblige<span class="pagenum"><a id="Page_31"></a>[31]</span>
+you to claim it from your unwilling
+self. And to dishonour that claim
+may become in their eyes (mirrored
+in your own), mean, disgraceful, dirty.
+In the language of contemporary youth,
+it will not be <em>decent</em>.<a id="FNanchor_1" href="#Footnote_1" class="fnanchor">[1]</a> That substitution
+of the word <em>decency</em> for the word
+<em>virtue</em> gives, methinks, the clue to the
+future revaluation of our moral standards.
+It implies, as I have suggested,
+a more intelligent and, in some ways,
+more indulgent, morality; but a morality
+on the whole more austere, a stark
+notion of duty armed with the relentless
+imperative which nowadays makes us
+abashed at the revelation in ourself
+of physical cowardice or bodily dirtiness.
+A morality, I venture to add,
+eventually able to do without the adornments
+coming under the head of “Moral
+Beauty.”</p>
+
+<div class="footnote">
+
+<p class="noi"><a id="Footnote_1" href="#FNanchor_1" class="label">[1]</a> “No, we may not be as moral as they (<i>i.e.</i>
+the older generation) are, but we are fifty times
+decenter.”—G. B. Stern, <cite>Tents of Israel</cite>, 1924;
+p. 244.</p>
+
+</div>
+
+<p>And, speaking of a future standard of
+“decency,” there will necessarily come<span class="pagenum"><a id="Page_32"></a>[32]</span>
+sundry revaluations quite intolerable
+to our present morality. I will not
+speak (since far too much is nowadays
+being spoken concerning what, after
+all, is but a small part of conduct)
+about such revaluations of sexual morals
+as <cite>Dædalus</cite> prognosticates from transplantation
+of ovaries. <em>That</em>, and coming
+facilitations for changing one’s sex,
+cannot, indeed, fail to modify family
+arrangements; although I have greater
+belief in the effects of future methods
+of producing and exchanging, not offspring,
+but other commodities, and
+the consequent alteration in our tenure
+and conception of property. Indissoluble
+marriage, which already strikes
+some of us as scarcely decent, will lose
+its practical utility once inheritance is
+more or less abolished, and the subsistence
+and education of children no
+longer a charge on parents. Nor is this
+all: a more restricted practice and
+therefore habitual notion of ownership
+may at some distant day educate men
+and women, parents and children,<span class="pagenum"><a id="Page_33"></a>[33]</span>
+lovers and friends, nay, masters and
+disciples, to admit Proteus even into
+the impregnable stronghold and inviolable
+sanctuary of human selfishness
+called <em>Love</em>. The “marriage of
+true minds” may, like the other one,
+come to be supplemented by honourable
+divorce. Exclusive reciprocal
+attachment, surely of all spiritual
+essences the most delicate, if not most
+volatile, may cease to be regarded
+as an inalienable piece of property,
+guaranteed by honour more terrible
+than law; and which, while all else
+(and ourselves most!) alters and shifts,
+cannot be altered and shifted without
+guilt of theft. There may come an
+end to the ideal of such fidelity as
+implies the claim of him or her once
+preferred to be preferred for ever; the
+duty also of continuing to prefer once
+having begun. Like much of the
+morality of a more intelligent age,
+“decent” behaviour in matters of
+sentiment will be based less upon an
+<em>ought</em> than an <em>is</em>. And I can conceive<span class="pagenum"><a id="Page_34"></a>[34]</span>
+that such a change may make love’s
+tenure less insecure and less routinish
+and perfunctory. It will, at least, save
+one of the finest kinds of happiness
+(and the multiplying factor of many
+other ones) not indeed from the passing
+misery of change, but from the ignominy
+of claimed or accepted sacrifice,
+and the cruel pollution of jealousy, not
+between lovers only, but between all
+who love. And when there shall be
+applied to love the solemn saying “the
+Lord giveth and the Lord taketh away”
+we may learn to temper our loss by the
+intenser gratitude for whatever, even
+if only for a time, has been ours.</p>
+
+<p>As with fidelity in love, so also with
+“loyalty” to persons, even to causes
+and ideas. But such, too often degrading,
+loyalty will, I imagine, be
+more than compensated for by the condemnation
+of a new sin against the
+Holy Ghost, and by insistence on a
+minimum (at least!) of consistency in
+one’s own ideas and a minimum of
+conformity between one’s judgment of<span class="pagenum"><a id="Page_35"></a>[35]</span>
+others and one’s judgment of oneself:
+the mote in one’s brother’s eye awakening
+the suspicion of the beam in one’s
+own.</p>
+
+<p>At the same time (which is not our
+time!), and as Intelligence takes on a
+leading part in morals, there will come
+the indulgent recognition that such a
+“decency” as we may exact (or try
+to exact) from ourselves, cannot, any
+more than personal cleanliness in our
+own day, be exacted from all our
+neighbours. It may take a good many
+transformations of Proteus before the
+mote can always be removed from our
+brother’s eye, even supposing the beam
+to have been taken away from our own.
+It is no easy matter to be always clean
+inside and out, especially when, like
+the little boy in Stevenson’s rhyme,
+“your dear Papa is poor,” poor in
+spirit, perchance one of a long line of
+moral paupers. Neither is “decency”
+always attainable where there has been
+no past charwoman to prepare your
+easy tidiness at expense of previous<span class="pagenum"><a id="Page_36"></a>[36]</span>
+dirty hands. Still less when, as nowadays,
+wallowing in excess or in cruelty
+is the only excitement many people
+can get out of life. Hence it may be a
+long while yet before the bare decencies
+of the spirit, even if recognized for
+such, can lose the value of rarity and the
+status of virtues. For, let us remember
+that, the fouler mankind’s surroundings
+and sores, the greater the need for
+incense and myrrh and even for the
+questionable odour of sanctity. Is not
+early Christianity’s, say St. Paul’s,
+insistence on chastity and mansuetude
+the expression of the otherwise inexpressible
+bestiality, cruelty, and vaingloriousness
+of decadent Rome? And
+what is the foolish Franciscan laudation
+of beggary save the measure of mediæval
+rapine and simony?</p>
+
+<p>So, for the time being and the world
+as it may, alas! long continue, mankind
+will need something besides a taste for
+moral decency, to wit, an admiration
+for generous, nay, quixotic impulses
+and for tender sensibilities. These<span class="pagenum"><a id="Page_37"></a>[37]</span>
+Intelligence, respectful towards the
+need for them, can neither create, nor,
+except by negative measures, even
+increase. But it can do something
+as necessary. Intelligence, and only
+Intelligence, can see to it that, even
+to-day, such rare and precious impulses
+and sensibilities be not diverted to evil
+results, wasted in barren self-sacrifice,
+or the fostering of hide-bound selfishness.
+Wasted, above all, in hecatombs
+to the Molochs of collective
+superstition, like the one which is
+only just over, and may begin again
+to-morrow.</p>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum"><a id="Page_38"></a>[38]</span></p>
+
+<h2 class="nobreak" id="III">III<br>
+<small>PROTEUS AND ÆSTHETICS</small></h2>
+</div>
+
+
+<p>“If there be any truth in these forecasts
+of what your fine Intelligence
+may bring about or justify in the
+domain of ethics, then” (it’s a certain
+kind of reader interrupting), “then
+may I never enter, nay, cast a glance
+into this detestable world of rationalized
+righteousness! <em>Human</em> do you call
+it, because you have made it godless?
+What is this Intelligence of yours
+worth if it fails to perceive that God
+exists because Man has need of Him;
+and that the true mission of virtue, of
+truth, of heroism, is not to make the
+world more endurable, but to satisfy
+our deepest human craving, that for
+greater harmony and loveliness, for
+deeper, steadier passion than otherwise
+life affords?”</p>
+
+<p><span class="pagenum"><a id="Page_39"></a>[39]</span></p>
+
+<p>My answer is that such a craving will
+become stronger, or at least wider-spread,
+in proportion as mankind grows
+more intelligent, therefore less exhausted
+by struggling against adverse circumstances,
+inbred defects and inherited
+superstitions. In proportion, likewise,
+as it will have learned to value its own
+virtues as they can minister to man’s
+prosperity and betterment. Nay, more:
+the time will come when we shall
+turn with disgust and wrath at their
+cultivation for any other purpose; and
+when pleasure in virtue and in heroism
+for its own sake may come to be
+accounted so much æsthetic dilettantism,
+questionable and well-nigh obsolete.
+For with the orientation of morals
+towards human usefulness, towards
+dutifulness conceived as decency, people
+will get to understand that what man
+craves for as consolation and enhancement,
+the passion deeper and steadier,
+the harmony more complete than real
+life furnishes, Man creates for himself
+in poetry and art, and in the things of<span class="pagenum"><a id="Page_40"></a>[40]</span>
+reality seen as poetry and art. In all
+this he has made himself a realm where
+truth is never betrayed, because in its
+sheer existence <em>true</em> and <em>false</em> become
+words without a meaning; moreover,
+where the deepest and highest passions
+are satisfied without being misapplied
+or wasted, because satisfied by their
+mere expression. Art and whatever
+the poor word <em>Art</em> may stand for—is
+the man-made sanctuary of the legitimate,
+the innocent, the immaculately
+<em>decent</em>, because it is closed to the shifting
+<em>needs</em>, the partial truths, above
+all, the <em>mine</em> and <em>thine</em>, which trouble
+real life. This, in its way, is also a
+realm of <em>otherness</em>, inasmuch as it
+transcends the self with its <em>here</em> and its
+<em>now</em>. Yet an <em>otherwise</em> not merely
+recognized by Intelligence, but made
+by the heart’s desire out of the heart’s
+own substance and in desire’s own
+shape; for of such are the forms of
+the painter and sculptor, no less than
+the counterfeit presentments of the
+poet. Above all, in the twin arts of<span class="pagenum"><a id="Page_41"></a>[41]</span>
+architecture and of music do we already
+meet the clarified embodiment of the
+longing and clinging, the solemn appeasement
+and victorious stress and
+fulfilment of human passion. Here, in
+art’s interludes of life, we can obtain
+what religious creeds lay open to the
+reproach of being false because they
+give it for true; and what love seeks
+to make unchanging, only to taste the
+bitterness of change. So that many as
+have been and will be the successive
+responses to our æsthetic cravings, the
+manifold satisfactions thereof, embodying
+as they do the purified essence of
+our feelings and activities, will, in the
+endless shifting of our valuations, perhaps
+constitute the one region where
+we need not be watching for Proteus.</p>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum"><a id="Page_42"></a>[42]</span></p>
+
+<h2 class="nobreak" id="IV">IV<br>
+<small>PROTEUS AND INTELLECTUAL MANNERS</small></h2>
+</div>
+
+
+<p>Though many other causes will bring
+about such moral revaluations as I have
+mentioned, Intelligence will play its
+part in justifying them. But Intelligence
+will itself effectuate great changes,
+methinks, in the minor moral realm of
+intellectual manners. For instance,
+proscribing <em>perfunctoriness</em>; making us
+ashamed, which we are not, of offering
+in the guise of opinion much which we
+know to be stop-gap and shoddy.
+The condemnation of perfunctoriness
+will lead to discarding heckler’s tricks
+and dialectic pit-falls like that concerning
+the future status of the widow
+of seven successive husbands, wherewith
+the Sadducees, though disbelieving
+in any after-life at all, tried to trip up<span class="pagenum"><a id="Page_43"></a>[43]</span>
+Jesus. His answer: that there would
+be neither marrying nor giving in
+marriage, may stand as the typical
+silencer to many queries with which
+debaters embarrass each other without
+advancing a step in the inquiry. For
+instance: “then, what do you propose
+to do?” Well! we may be intelligent
+enough to know that in nine cases out
+of ten there <em>is</em> nothing to propose.
+Since the more habitually we get to
+regard the Future as resulting from the
+Present and the Present from the Past,
+the more often we must admit that we
+know too little of the hidden Past, and
+less of the fleeting Present, to make
+sure what new combinations, including
+reciprocal neutralizations, are preparing
+to arise. The oftener we have watched
+the Old Man Proteus, the less, perhaps,
+our cocksureness about his next
+metamorphosis. Or, take another question
+which intellectual good breeding
+will refrain from because Intelligence
+foresees no answer: “In that
+case, what will you put in its place?”<span class="pagenum"><a id="Page_44"></a>[44]</span>
+<em>It</em> being, let us say, indissoluble marriage,
+exclusive private ownership, war
+(you remember William James was,
+shortly before 1914, looking out for a
+<em>surrogate</em>!) or even what used to be
+called <em>God</em>, but may now be thankful
+when philosophers (like Mr. Lloyd
+Morgan) allow it merely adjectival
+rank as “<em>Deity</em>.” How do you know
+that <em>it</em>, whatever <em>it</em> is, <em>will leave a place</em>?
+Do we not daily see that, when things
+vanish, their place (place in the world,
+in our thoughts, and also, in our
+hearts!) are apt to vanish along with
+them and be forgotten? And among
+such things as may some day vanish
+and be forgotten there will, I trust,
+be the dialectic ju-jitsu which makes
+many pages even of Plato such dreary
+reading. Lacking, as the world then
+did, all discipline of experimental
+science, such acrobatics may have
+afforded an indispensable training to
+logical thought, and a preparation for
+that latest-comer of all intellectual
+habits: care for the exact sense in<span class="pagenum"><a id="Page_45"></a>[45]</span>
+which a word is being employed.
+Apart, however, from this, controversy
+of this kind has but a personal value,
+adding nothing to knowledge, just as
+nothing is added to wealth when one
+gamester loses money to another: the
+personal value of downing an adversary
+and magnifying oneself by mere comparison,
+which may be reckoned in some
+distant Future an intellectual entertainment
+fit for cads.</p>
+
+<p>Such are a few of the improvements
+one might foresee in our intellectual
+manners. Allied with these is one
+which appertains to our intellectual
+morals. In another book<a id="FNanchor_2" href="#Footnote_2" class="fnanchor">[2]</a> I have
+written at some length against the
+survival of the lawyer’s and politician’s
+arts of <em>Persuasion</em>, and of the priestly
+arts of <em>Exhortation</em> and <em>Denunciation</em>,
+both sets of them intended to influence
+men to think, feel and act differently
+from how they would otherwise do,
+but in compliance with the persuasive
+person’s wishes. Some day or other<span class="pagenum"><a id="Page_46"></a>[46]</span>
+such attempts may be accounted
+impertinent where they fail, and dishonest
+where they succeed; they and
+the sway of words should constitute a
+chapter of intellectual morals.</p>
+
+<div class="footnote">
+
+<p class="noi"><a id="Footnote_2" href="#FNanchor_2" class="label">[2]</a> <cite>The Handling of Words.</cite></p>
+
+</div>
+
+<p>Returning to mere intellectual
+<em>manners</em>, I think intellectual prize
+fights, duels and <em>vendettas</em>, such as
+wasted half the life of the greatest
+intellects from Abélard to Samuel
+Butler, are a little going out of fashion,
+like the quarrels for precedence we
+read about in <cite>Herbert of Cherbury</cite>
+and such-like: they stop the traffic,
+make a noise and, after a minute, bore
+us! Moreover, I fancy I see a reason
+why, let alone mere spectators of such
+frays, even those who might have been
+principals in them will refrain and call
+them ill-mannered. I mean that, as
+people grow more intelligent, or more
+people grow intelligent at all, we shall
+discover other opportunities for exercising
+intellectual energy and for obtaining
+the thrill and uplift of intellectual
+prowess. There will appear other<span class="pagenum"><a id="Page_47"></a>[47]</span>
+adversaries to wrestle with and circumvent:
+<em>Things</em>, <em>Reasons why</em>, the
+Universe’s riddles; not any longer mere
+other people trying to make us write
+ourselves down asses as we try to make
+them. The finest sport in all the world
+is hunting Proteus....</p>
+
+<p>Nor will I let myself be heckled with
+the objection that joys like these are
+reserved for minds like yours and mine,
+dear reader, minds <em>Creative</em>....
+As if books, pictures, policies, opinions,
+etc., etc., were created <i lang="la">ex nihilo</i>, obeying
+that august <em>fiat</em> which evolutional
+philosophy has filched from the old
+Creator of all things to bestow on every
+member of the Intelligentsia. No, no,
+the joys I speak of are unprofessional.
+And the chief creative joy is that of
+understanding and appreciating; say
+the joy of every deserving reader outrunning
+the straight path of the writer
+in circles like those of a dog pleased to
+be taken a walk.</p>
+
+<p>Amateurishness! I can hear those
+of you <em>pshah!</em> and <em>tosh!</em> who believe<span class="pagenum"><a id="Page_48"></a>[48]</span>
+in training the (involuntary) attention
+and who value work less by results
+than by efforts. Amateurish? Why,
+of course, that’s just the fun and the
+good of it. Also the unsought moral
+gain. For, are we not made more
+“decent” by these private, irresponsible
+dealings with the Unknown (at
+least to us); for instance, those secret
+inaccurate guesses at geological and
+historical riddles which make up half
+the pleasure of a journey? Since these
+amateurish stalkings of Proteus attain
+an attractiveness such that personal
+controversy seems insipid or odious by
+comparison.</p>
+
+<p>I have had the good fortune once or
+twice, even in an old-fashioned lifetime,
+to witness the full flowering of such
+selfless intellectual happiness: to watch
+a mind so passionately interested in
+certain subjects as to care nothing
+whether the enchanting new ideas were
+its own or other folks’; nay, whether
+its own were by them confirmed or
+utterly demolished. I have seen that<span class="pagenum"><a id="Page_49"></a>[49]</span>
+unusual spectacle, but once or twice
+only. For Intelligence has yet to
+establish its claim to such generous
+happiness. Once or twice only. But
+never more clearly have I seen it than
+in you, Mario Calderoni, dear dead
+young friend, who have embodied my
+hopes for the Intelligence of a distant
+Future, when you will not have received
+a posthumous recognition and I may be
+entirely forgotten.</p>
+
+<hr class="chap x-ebookmaker-drop">
+
+<div class="chapter">
+<p><span class="pagenum"><a id="Page_50"></a>[50]</span></p>
+
+<h2 class="nobreak" id="V">V<br>
+<small>USES AND ABUSES</small></h2>
+</div>
+
+
+<p>Considering the great pleasantness,
+let alone the various uses, of the
+mental habits I have summed up as
+<em>Intelligence</em>, it is surprising there should
+not yet be more of it forthcoming. It
+has, at present, a way of giving out
+suddenly in individuals and nations,
+just when its mixture of light-hearted
+scepticism and steady hopefulness would
+seem most needed. By which inadequacy
+of its supply I am confirmed in
+the suspicion that Intelligence is a
+much more recent human accomplishment
+than the Past’s other achievements
+in art and poetry and wit and
+humour would lead us to expect.
+Indeed, the deserved prestige of that
+Past, and the consequent survival of<span class="pagenum"><a id="Page_51"></a>[51]</span>
+its educational and religious traditions
+and institutions, is very likely what has
+so strangely delayed the advent of
+modern Intelligence. And it is their
+dwindling, itself partly attributable
+to nascent Intelligence, which has
+delivered our intellectual activities from
+sundry blind alleys and sloughs of
+despond, like those presided over by
+the terrible, and most unintelligent,
+word <em>Salvation</em>. For Intelligence, one
+of whose virtues is abolishing Fear, is
+itself stifled by the obsession of danger
+in this world or the next: are we not
+seeing the most naturally intelligent of
+all countries fallen into incredible self-defeating
+stupidity through its present
+mania for “Security”? It is, of
+course, evident that, apart from the
+decay of religious and classical superstition,
+the growth of Intelligence in our
+own days has been enormously fostered
+by increase both of scientific knowledge
+and of civic liberty, and also, as far as
+it goes, of well-being; also of opportunities
+for variety of impression at<span class="pagenum"><a id="Page_52"></a>[52]</span>
+least for the well-to-do classes. And
+one hopes there may be other kinds of
+yet unforeseen novelties coming to
+Intelligence’s assistance in the Future.
+Yet, the chief obstacles once removed,
+my hope is chiefly in what one might
+call Intelligence’s own natural proliferation.
+One intelligent mode of
+thought inevitably leads to another,
+and puts out of action an unintelligent
+one. Every intelligent book adds, let
+us hope, to the intelligence of at least
+one reader; so that we could almost
+do without the tremendous launchings-forth
+of the great challengers, Ruskin,
+Tolstoy, Ibsen, Nietzsche; even of the
+more purely beneficent (because lighter-hearted)
+stirrers-up of thought like
+Bernard Shaw.</p>
+
+<p>Believing, therefore, in such spontaneous
+multiplication of Intelligence,
+I do not find much use for the methods,
+whereof that one is but an extreme
+example which is attributed to the late
+Dr. Metchnikoff, proposing (it is said)
+to increase the output of genius by<span class="pagenum"><a id="Page_53"></a>[53]</span>
+judicious doses of syphilitic virus.
+Surely, the supply of raw genius would
+be fairly adequate if only we could put
+it to the best use? And the best use
+of genius is not, in my opinion, the
+practical application of science to
+methods of reciprocal slaughter and
+devastation. Nor even its application
+to easier locomotion, intercourse and
+the cheapening of food, heat and light,
+except to the extent which would secure
+more health, more leisure and more
+opportunity all round; certainly at
+present not the case. And, speaking
+for myself, the best use of genius and
+the most necessary application of
+science, seems to be teaching people
+what Descartes called (whatever his
+precise meaning) the <i lang="fr">méthode de bien
+conduire son esprit</i>; at least to the
+slight degree of not letting obsolete
+shibboleths and new-fangled catchwords
+carry us, as they did ten years
+ago, headlong into the disasters we
+were trying to avoid.</p>
+
+<p>The next best thing to be done with<span class="pagenum"><a id="Page_54"></a>[54]</span>
+our existing supply of genius might be
+to train it to check, by application of
+common sense and a little modesty,
+certain ailments inherent in its own
+constitution, namely: exaggeration, contrariness
+and, of course, megalomania.
+Such self-purification, on the part of
+persons of genius or what passes for
+such, would save the rest of us the
+disheartening task of throwing half of
+their sayings onto the scrap-heap, and
+of picking out of the scrap-heap some
+of the sayings of rival persons of genius
+consigned thereunto at their bidding.
+There is quite enough to be done in
+the way of selection, assimilation and
+elimination (since all understanding
+means that) without setting such Intelligence
+as we have to play scavenger to
+wasteful or slatternly genius....
+And yet, and yet.... May not
+those trashinesses of genius, and the
+scavengering entailed thereby, be that
+which secures to Intelligence its highest
+activities, and in so far fulfils one of
+Genius’s chief missions? For, after<span class="pagenum"><a id="Page_55"></a>[55]</span>
+all, Intelligence is the living, changing
+mass of unprofessional thought, the
+averaged, habitual thought of the
+majority of us. And is not the chief
+use of all such genius as is not set
+aside in science or in art, rather to make
+the rest of us think, than to furnish us
+with ready-made thoughts, however
+true or sublime? Nay, I would hazard
+the supposition that it was because the
+men of the Past were presented with
+such a mass of ready-made thoughts,
+creeds, philosophies, and moral formulæ
+(think of <cite>Deuteronomy</cite>!) all given for
+perfect and definitively valid, that
+there did not appear till so late in the
+day just what I have called <em>Intelligence</em>,
+which alone could give that without
+which the greatest genius is solitary and
+barren: an audience, a reader, a mind
+able to carry on the thinking and, in
+so far, able to eliminate the deciduous,
+the rubbishy elements of the thought
+already offered to it.</p>
+
+<p>The consideration of this loss which
+mankind may have suffered through the<span class="pagenum"><a id="Page_56"></a>[56]</span>
+notion that thoughts must be accepted
+ready-made rather than transformed
+into one’s own, and that, consequently,
+men must be set apart to do the thinking
+(as the priests once did the praying
+and sacrificing) for others; this consideration
+is at the bottom of my present
+hatred of the idea (which I shared in
+my youth) that exceptionally gifted
+persons should consecrate themselves
+into a caste, ministers, maybe, of a new
+religion, chosen vessels for a new-fangled
+deity.</p>
+
+<p>And since we are discussing the
+reciprocal uses of Genius and of mere
+Intelligence (Genius ever stimulating
+Intelligence, Intelligence ever keeping
+Genius within the bounds of sense and
+of decency), allow me to set my face
+against all those oligarchies of genius
+and virtue which every Utopian philosopher
+from Plato to Comte, from
+Renan to H. G. Wells, has wanted to
+foist on dull, driven Mankind. And let
+us take to heart the <i lang="la">reductio ad
+absurdum</i> of all such schemes in the<span class="pagenum"><a id="Page_57"></a>[57]</span>
+latest and hugest joke of our one great
+laughing philosopher, when he shows
+us the world governed by bald, toothless
+and passionless sages, who, even
+without having reached the years of
+Methuselah, have long survived the
+age when every decent person should
+retire to his or her coffin.</p>
+
+<p>And before leaving the subject of the
+services (sometimes scarcely desired)
+which Genius may need at the humble
+hands of Intelligence, let me point out
+how our men of genius or thereabouts
+(“Creative Intellects” is the official
+expression) have latterly taken over
+one of the most remunerative and
+mischievous employments of all obsolete
+priesthoods, to wit: of frightening
+believers with bogies of their
+manufacture. For, just as the Torments
+of Hell and the Pitfalls of Sin
+formerly supplied matter for all the
+learning and eloquence of centuries of
+Divines, so nowadays encyclopædic
+science and journalistic emphasis are
+being applied to making our flesh creep<span class="pagenum"><a id="Page_58"></a>[58]</span>
+with prophecies of Perils. There is
+Peril from black, brown, yellow races;
+from Semites, Mongols, Latins (in
+“Nordic” countries), Teutons (in
+Latin countries), Celts all over Anglo-Saxondom,
+Jews throughout the globe;
+Bolsheviks, Fascists and Junkers, International
+Communism and International
+Finance, Militarism which was put an
+end to by the War, besides our old
+friends Jesuits and Freemasons. There
+is Peril from the multiplication of Idiots
+and the multiplication of Supermen;
+Peril from depopulation and Peril from
+overpopulation, from unsexed women
+and over-sexed women; Peril from
+over-much altruism, and Peril from insufficient
+altruism. Perils which I cannot
+even remember, but by whose side
+those of War, Pestilence and Famine
+are, of course, too familiar to be noticed.
+Indeed, it is characteristic of this latter-day
+apocalypse that none of the prophets
+of disaster prophesied the War and the
+Fruits of Victory, except, if I remember
+correctly, Mr. H. G. Wells, who, however,<span class="pagenum"><a id="Page_59"></a>[59]</span>
+once the War had been declared,
+enlisted at once for the Fleet Street
+Front and bid us unsheath the Sword
+of Peace for the final extermination of
+Militarism....</p>
+
+<p>Therefore, it strikes me that in view
+of this multifold reincarnation of the
+spirit of prophecy in our Men of Science
+and of Letters, some increase of
+Intelligence may well be needed to
+steady our nerves and allow us to recognize
+the real dangers of which, heaven
+knows, there are plenty requiring to be
+faced with ... well, the far-too-little
+Intelligence already at our disposal.
+For, possibly because it is
+not “creative” (and <em>creation</em> usually
+implies chaos and refuse-heaps), Intelligence
+is especially preservative and
+sheltering. It is the natural purifier
+and tidier-up where Genius and
+Stupidity, disrupting and corrupting by
+turns, have between them played the
+deuce with our poor mortal heritage.
+And in the face of the millionfold sacrifices
+of self and others which Ideals<span class="pagenum"><a id="Page_60"></a>[60]</span>
+and Heroisms have once again
+presented to our foolish admiration,
+I would go so far as to add that
+Intelligence is often more humane
+than Sentiment, and, oftener still,
+more beneficent than what we call
+Virtue.</p>
+
+<p>From the misapplications of our
+Science, the exaggerations and lunacies
+of our Genius, and the havoc wrought
+by our higher instincts, we therefore
+need to be saved, not by Reason, which
+is always too long in getting under
+weigh, but by Intelligence, active,
+alacritous and ubiquitous, afraid neither
+of being laughed at nor of laughing
+at others.... But even as I
+stammer out this old-fashioned demand
+for <em>Salvation</em>, the name of Proteus
+sounds suddenly in the ear of my spirit.
+How can I tell what Proteus may next
+be—perhaps already is—changing into?
+And after prating about Intelligence
+being one-half light-hearted scepticism
+and one-half steady confidence, am I
+going to join the mixed choir, ecstatic<span class="pagenum"><a id="Page_61"></a>[61]</span>
+or growling, of prophesying optimists
+and pessimists?</p>
+
+<p>But, though restrained by that
+thought of Proteus and his frequently
+inconsiderate metamorphoses, I should
+like to add a word on one question
+regarding the near future of Intelligence,
+but with the understanding that
+I do so not as a prophet of what may
+happen, so much as a witness of half a
+century’s already accomplished changes.
+The question, or rather query, has
+doubtless occurred to some of my
+readers, and is as follows: Granted that
+Intelligence rids us of dangerous superstitions,
+and rids us, moreover, of the
+habit of superstition, which is a matter
+less of <em>what</em> than of <em>how</em> one believes;
+granted that along with lucidity
+Intelligence brings also intellectual
+equity, cleanness and dignity; granted
+all this, may not such gains be paid for
+in disproportionate loss? And may not
+Intelligence itself constitute a danger?
+Has it not already begun despoiling
+life of many of the shelters built by<span class="pagenum"><a id="Page_62"></a>[62]</span>
+the Ages with unknowing or inspired
+hands? Worse still: will it not replace
+with its narrow and wavering lucidity
+those dark unquestioning instincts and
+aspirations, lurking ever ready in the
+obscure organization and the mysterious
+formulæ inherited from our remotest
+ancestors?</p>
+
+<p>To this I would answer that, so far
+as my observation tells me, the soul
+will always find some shape and some
+material wherein to build, or to restore,
+the shelters needed in its moments of
+weariness and sorrow, there to await
+the consolation which no creed seems
+to bring without the supreme aid of
+time. On the other hand, that the
+instinctive part of our nature, when it
+is truly instinctive, can surely be
+trusted to keep itself alive in the face
+of the (alas!) inevitably feeble imperatives
+of such new-comers as Reason and
+Intelligence. Moreover, that all the
+sciences dealing with man point to the
+fact that traditional commandments
+and, even more, physiologically transmitted<span class="pagenum"><a id="Page_63"></a>[63]</span>
+tendencies, have constituted
+themselves as responses to changing
+environments and needs, so that their
+transformation may be expected as a
+result of the very movement of things
+which has produced them.</p>
+
+<p>And, finally, I would add that, even
+if all this were doubtful, we must accept
+the risks which the coming of Intelligence
+may entail upon us, because (so
+at least appears evident to me) whatever
+sets-back and temporary overwhelmings
+it may suffer in the future,
+Intelligence is of such nature that, once
+come, it must develop, or at least
+bide its time and revive in as yet
+unforeseeable manner. And Intelligence
+itself must prepare us to expect
+that every change may mean a loss, but
+likewise mean an opportunity. Perhaps
+it may even sometimes show us how
+the one can turn into the other; for
+does not Intelligence keep an eye on
+Proteus?</p>
+
+
+<p class="p2 noic"><span class="smcap">Finis.</span></p>
+
+
+
+
+<hr class="chap">
+<div class="tnote">
+<p class="noi tntitle">Transcriber’s Notes:</p>
+
+<p class="smfont">A Table of Contents has been provided for the convenience of the
+   reader, and is granted to the public domain.</p>
+
+<p class="smfont">Punctuation and spelling inaccuracies were silently corrected.</p>
+</div>
+
+</body>
+</html>
+
